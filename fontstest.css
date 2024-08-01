@@ -1,3 +1,49 @@
 body {
-    color: brown;
+    margin: 0;
+    padding: 20px;
+    background-color: #a4a3a3;
+    color: #252525;
 }
+p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+h1 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .page-read-time  {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: right;
+  }
+  h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  .page {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .page-header {
+    background-color: #FF852E;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+  
+  .page-title {
+    margin-top: 0;
+  }
+  
+  

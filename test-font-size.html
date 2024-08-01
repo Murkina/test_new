@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТЕСТ СО ШРИФТАМИ</title>
     <link rel="stylesheet" href="file:///Users/anastasiazvaginceva/Projects/test_new/fontstest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,900;1,400&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-   <p class="p-1"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ad.
-   Accusantium ipsa eos corporis quis. Quod dolorum tempore delectus labore?
-   Laborum voluptatum ratione architecto, doloribus placeat ad praesentium tenetur iure?</span></p> 
-   <p class="p-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ad.
-    Accusantium ipsa eos corporis quis. Quod dolorum tempore delectus labore?
-    Laborum voluptatum ratione architecto, doloribus placeat ad praesentium tenetur iure?</span></p> 
-    <p class="p-3"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ad.
-        Accusantium ipsa eos corporis quis. Quod dolorum tempore delectus labore?
-        Laborum voluptatum ratione architecto, doloribus placeat ad praesentium tenetur iure?</span></p> 
-
+    <main class="page">
+        <header class="page-header">
+            <h1 class="page-title">Поток документа</h1>
+            <p class="fira-sans-regular">Объяснение одной из основных концепций вёрстки и её составляющих: контекста форматирования, схлопывания отступов и выхода из потока. </p>
+            
+            <p class="page-read-time">Время чтения: 6 мин</p>
+            </header>
+            
+            <p>Поток — одно из важнейших базовых понятий в вёрстке. Это принцип организации элементов на странице при отсутствии стилей: если мы напишем HTML и не напишем CSS, то отображение в браузере будет предсказуемо благодаря тому, что мы абсолютно точно знаем, как браузер располагает элементы в потоке.</p>
+            
+            <p>Даже если к странице не подключено никаких стилей, к каждому элементу всё равно будут применяться CSS-правила, «зашитые» в движке браузера. Благодаря этим правилам заголовок h1 крупнее заголовка h2, а ссылки — синие и подчёркнутые. На основании этих правил условно все элементы на странице можно разделить на две категории: блочные (block) и строчные (inline). Например, div будет блочным, а span или a — строчным. Поменять стандартное поведение можно при помощи CSS-свойства display.</p>
+            
+            <p>Если вообще не применять никаких стилей, браузер формирует из элементов нормальный поток. Поведение блочных элементов в нормальном потоке отличается от поведения строчных.</p>
+            
+            <h2>Контекст форматирования</h2>
+           <p>Правила расположения строчных и блочных элементов в нормальном потоке называются контекстом форматирования. Блочные элементы участвуют в формировании блочного контекста форматирования. Строчные элементы формируют строчный контекст форматирования. Расположение элементов в контексте форматирования зависит от направления письма для конкретного языка. Например, тексты на европейских языках мы читаем и пишем слева направо сверху вниз. Это означает, что по умолчанию контекст форматирования располагает блочные элементы сверху вниз, а строчные — слева направо. Но, например, в случае с японским языком мы видим совершенно другую картину: блочные элементы будут располагаться слева направо, а строчные — сверху вниз.</p>
+            
+            <p>Во всех примерах далее будет рассматриваться направление письма, характерное для европейских языков: слова — слева направо, блоки — сверху вниз. Но все те же объяснения можно применять и для другого направления письма.</p>
+</main>
 </body>
 </html>
